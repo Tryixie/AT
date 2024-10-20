@@ -1,0 +1,1111 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+@font-face {
+  font-family: "ukiranregular";
+  src: url("ukiran-webfont.woff2") format("woff2"),
+    url("ukiran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+  font-family: "Arima", system-ui;
+font-family: "Red Hat Display", sans-serif;
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+  border: none;
+  outline: none;
+  z-index: 1;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html {
+  min-width: 1920px;
+  width: 100%;
+}
+
+body {
+  background: url(assets/background-right.jpg);
+  background-repeat: repeat-y;
+  background-position: center right;
+  background-attachment: fixed;
+}
+
+/* ----------------------------------------------------------- */
+/* HEADER */
+
+header {
+  background-color: #ffffff;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd2bb;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+header #nav-user img#header-logo {
+  height: 120px;
+  margin-right: 24px;
+}
+
+header nav ul#nav-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+}
+
+header nav ul#nav-main li a {
+  font-size: 20px;
+  color: #5d330d;
+}
+
+header nav ul#nav-main li a:hover {
+  color: #b76e5d;
+}
+
+header nav ul#nav-main li a {
+  padding-top: 6px;
+  position: relative;
+}
+
+header nav ul#nav-main li a:after {
+  background: none repeat scroll 0 0 transparent;
+  top: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #b76e5d;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+header nav ul#nav-main li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+header #nav-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 84px;
+  padding-bottom: 40px;
+}
+
+header #nav-user #nav-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+header #nav-user #nav-icons figure {
+  margin-left: 24px;
+}
+
+header #nav-user #nav-icons figcaption {
+  color: #b76e5d;
+  font-family: "ukiranregular";
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+header #nav-user #nav-icons img {
+  width: 40px;
+}
+
+header #nav-user #nav-icons img#fav:hover {
+  background: url(assets/icon-fav-alt.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header #nav-user #nav-icons img#fav {
+  background: url(assets/icon-fav.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header #nav-user #nav-icons img#account:hover {
+  background: url(assets/icon-account-alt.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header #nav-user #nav-icons img#account {
+  background: url(assets/icon-account.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header #nav-user #nav-icons img#basket:hover {
+  background: url(assets/icon-basket-alt.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header #nav-user #nav-icons img#basket {
+  background: url(assets/icon-basket.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header #nav-user #search input::placeholder {
+  color: #3b3b3b;
+}
+
+header #nav-user #search input {
+  color: #b76e5d;
+}
+
+header #nav-user #search {
+  border-bottom: 1px solid #b76e5d;
+  padding-bottom: 2px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header #nav-user #search i {
+  color: #b59247;
+}
+
+header #header-infos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b76e5d;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+header #header-infos .inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+}
+
+header #header-infos span,
+header #header-infos i {
+  font-size: 14px;
+  color: #ddd2bb;
+}
+
+header #header-infos i {
+  margin-right: 16px;
+}
+
+header #header-infos .inner #livraisons span {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+header #header-infos .inner #livraisons i {
+  margin-right: 8px;
+}
+
+/* ----------------------------------------------------------- */
+/* Nouveautes Jeux */
+
+#nouveautes h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 42px;
+  font-size: 60px;
+  color: #b59247;
+  font-family: "ukiranregular";
+  letter-spacing: 2px;
+  margin-bottom: 42px;
+}
+
+#nouveautes h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  color: #b76e5d;
+  font-family: "ukiranregular";
+  letter-spacing: 2px;
+}
+
+#jeux-societe {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#jeux-societe li {
+  width: 293px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  padding: 42px;
+  border-radius: 8px;
+  position: relative;
+}
+
+#jeux-societe img {
+  margin-bottom: 24px;
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+#jeux-societe .tag {
+  position: absolute;
+  z-index: 2;
+  background-color: #b76e5d;
+  color: #ddd2bb;
+  top: 0px;
+  left: 0px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px 0px 80px 0px;
+}
+
+#jeux-societe .like {
+  position: absolute;
+  z-index: 2;
+}
+
+#jeux-societe a h3 {
+  font-size: 26px;
+  height: 26px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: "ukiranregular";
+  color: #b76e5d;
+  letter-spacing: 1px;
+}
+
+#jeux-societe a h4 {
+  color: #5d330d;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #b76e5d;
+  letter-spacing: 1px;
+  background-color: #ddd2bb;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  height: 20px;
+  overflow: hidden;
+}
+
+#jeux-societe li:hover {
+  opacity: 0.8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#jeux-societe a h5 {
+  display: none;
+}
+
+#jeux-societe a .stock {
+  color: #839b80;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#jeux-societe a .prix {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  align-items: center;
+  position: relative;
+}
+
+#jeux-societe a .prix span {
+  color: #b76e5d;
+  font-weight: 500;
+}
+
+#jeux-societe a .prix i {
+  background-color: #b76e5d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  color: #ddd2bb;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+}
+
+#jeux-societe a .like i {
+  color: #b76e5d;
+  font-size: 22px;
+}
+
+#nouveautes .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+#nouveautes .link a {
+  background-color: #b76e5d;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 8px;
+  color: #ddd2bb;
+  font-weight: 500;
+}
+
+#nouveautes .link a:hover {
+  opacity: 0.8;
+}
+
+.jeux-societe-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+
+.jeux-societe-container .arrow-left {
+  position: absolute;
+  left: -20px;
+  font-size: 28px;
+  background-color: #b59247;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.jeux-societe-container .arrow-right {
+  position: absolute;
+  right: -20px;
+  font-size: 28px;
+  background-color: #b59247;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.jeux-societe-container .arrow-right i {
+  font-size: 26px;
+  color: #ffffff;
+  margin-right: -3px;
+}
+.jeux-societe-container .arrow-left i {
+  font-size: 26px;
+  color: #ffffff;
+  margin-left: -3px;
+}
+
+.jeux-societe-container .arrow-left:hover,
+.jeux-societe-container .arrow-right:hover {
+  opacity: 0.8;
+}
+
+/* ----------------------------------------------------------- */
+/* Nouveautes Jeux Enfants */
+
+#nouveautes-enfants h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 42px;
+  font-size: 60px;
+  color: #b59247;
+  font-family: "ukiranregular";
+  letter-spacing: 2px;
+  margin-bottom: 42px;
+}
+
+#nouveautes-enfants h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  color: #b76e5d;
+  font-family: "ukiranregular";
+  letter-spacing: 2px;
+  margin-top: 42px;
+}
+
+#jeux-enfants {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#jeux-enfants li {
+  width: 293px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  padding: 42px;
+  border-radius: 8px;
+  position: relative;
+}
+
+#jeux-enfants img {
+  margin-bottom: 24px;
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+#jeux-enfants .tag {
+  position: absolute;
+  z-index: 2;
+  background-color: #b76e5d;
+  color: #ddd2bb;
+  top: 0px;
+  left: 0px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px 0px 80px 0px;
+}
+
+#jeux-enfants .like {
+  position: absolute;
+  z-index: 2;
+}
+
+#jeux-enfants a h3 {
+  font-size: 26px;
+  height: 26px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: "ukiranregular";
+  color: #b76e5d;
+  letter-spacing: 1px;
+}
+
+#jeux-enfants a h4 {
+  color: #5d330d;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #b76e5d;
+  letter-spacing: 1px;
+  background-color: #ddd2bb;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  height: 20px;
+  overflow: hidden;
+}
+
+#jeux-enfants li:hover {
+  opacity: 0.8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#jeux-enfants a h5 {
+  display: none;
+}
+
+#jeux-enfants a .stock {
+  color: #839b80;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#jeux-enfants a .prix {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  align-items: center;
+  position: relative;
+}
+
+#jeux-enfants a .prix span {
+  color: #b76e5d;
+  font-weight: 500;
+}
+
+#jeux-enfants a .prix i {
+  background-color: #b76e5d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  color: #ddd2bb;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+}
+
+#jeux-enfants a .like i {
+  color: #b76e5d;
+  font-size: 22px;
+}
+
+#nouveautes-enfants .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+#nouveautes-enfants .link a {
+  background-color: #b76e5d;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 8px;
+  color: #ddd2bb;
+  font-weight: 500;
+}
+
+#nouveautes-enfants .link a:hover {
+  opacity: 0.8;
+}
+
+.jeux-enfants-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+
+.jeux-enfants-container .arrow-left {
+  position: absolute;
+  left: -20px;
+  font-size: 28px;
+  background-color: #b59247;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.jeux-enfants-container .arrow-right {
+  position: absolute;
+  right: -20px;
+  font-size: 28px;
+  background-color: #b59247;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.jeux-enfants-container .arrow-right i {
+  font-size: 26px;
+  color: #ffffff;
+  margin-right: -3px;
+}
+.jeux-enfants-container .arrow-left i {
+  font-size: 26px;
+  color: #ffffff;
+  margin-left: -3px;
+}
+
+.jeux-enfants-container .arrow-left:hover,
+.jeux-enfants-container .arrow-right:hover {
+  opacity: 0.8;
+}
+
+/* ----------------------------------------------------------- */
+/* Precommandes Jeux */
+
+#precommandes {
+  background: url(assets/center-right.png) no-repeat center left,
+    url(assets/center-left.png) no-repeat center right;
+  background-color: #b76e5d;
+  margin-top: 42px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+#precommandes h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+  font-family: "ukiranregular";
+  letter-spacing: 2px;
+}
+
+#jeux-precommandes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#jeux-precommandes li {
+  width: 293px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 42px;
+  border-radius: 8px;
+  position: relative;
+}
+
+#jeux-precommandes img {
+  margin-bottom: 24px;
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+#jeux-precommandes .tag {
+  position: absolute;
+  z-index: 2;
+  background-color: #ddd2bb;
+  color: #b76e5d;
+  top: 0px;
+  left: 0px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px 0px 80px 0px;
+}
+
+#jeux-precommandes .like {
+  position: absolute;
+  z-index: 2;
+}
+
+#jeux-precommandes a h3 {
+  font-size: 26px;
+  height: 26px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: "ukiranregular";
+  color: #b76e5d;
+  letter-spacing: 1px;
+}
+
+#jeux-precommandes a h4 {
+  color: #5d330d;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #b76e5d;
+  letter-spacing: 1px;
+  background-color: #ddd2bb;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  height: 20px;
+  overflow: hidden;
+}
+
+#jeux-precommandes li:hover {
+  opacity: 0.8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#jeux-precommandes a h5 {
+  display: none;
+}
+
+#jeux-precommandes a .stock {
+  color: #5d330d;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#jeux-precommandes a .prix {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  align-items: center;
+  position: relative;
+}
+
+#jeux-precommandes a .prix span {
+  color: #b76e5d;
+  font-weight: 500;
+}
+
+#jeux-precommandes a .prix i {
+  background-color: #b76e5d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  color: #ddd2bb;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+}
+
+#jeux-precommandes a .like i {
+  color: #b76e5d;
+  font-size: 22px;
+}
+
+#precommandes .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+#precommandes .link a {
+  background-color: #ffffff;
+  color: #b76e5d;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+#precommandes .link a:hover {
+  opacity: 0.8;
+}
+
+.jeux-precommandes-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+
+.jeux-precommandes-container .arrow-left {
+  position: absolute;
+  left: -20px;
+  font-size: 28px;
+  background-color: #ddd2bb;
+  color: #b76e5d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.jeux-precommandes-container .arrow-right {
+  position: absolute;
+  right: -20px;
+  font-size: 28px;
+  background-color: #ddd2bb;
+  color: #b76e5d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.jeux-precommandes-container .arrow-right i {
+  font-size: 26px;
+  color: #b76e5d;
+  margin-right: -3px;
+}
+.jeux-precommandes-container .arrow-left i {
+  font-size: 26px;
+  color: #b76e5d;
+  margin-left: -3px;
+}
+
+.jeux-precommandes-container .arrow-left:hover,
+.jeux-precommandes-container .arrow-right:hover {
+  opacity: 0.8;
+}
+
+/* ----------------------------------------------------------- */
+/* Equipe */
+
+#equipe {
+  background-color: #ffffff;
+}
+
+#jeux-equipe {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+#jeux-equipe li {
+  width: 620px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  padding: 42px;
+  border-radius: 8px;
+  margin-bottom: 42px;
+}
+
+#jeux-equipe .avatar {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#jeux-equipe .avatar img {
+  width: 100%;
+}
+
+#jeux-equipe .jeu {
+  width: 360px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  border-left: 4px dashed #ddd2bb;
+  padding-left: 42px;
+}
+
+#jeux-equipe .avatar h4 {
+  font-family: "ukiranregular";
+  text-align: center;
+  color: #b76e5d;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+#jeux-equipe .avatar p {
+  margin-top: 8px;
+  font-family: "ukiranregular";
+  text-align: center;
+  color: #b76e5d;
+  letter-spacing: 2px;
+}
+
+#jeux-equipe .avatar h2 {
+  margin-top: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #b76e5d;
+}
+
+#jeux-equipe h3 {
+  font-family: "ukiranregular";
+  color: #5d330d;
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+#jeux-equipe .jeu .illustration {
+  display: flex;
+  align-items: center;
+}
+
+#jeux-equipe .jeu .illustration img {
+  height: 100px;
+  margin-right: 12px;
+}
+
+#jeux-equipe .jeu .avis p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 14px;
+  color: #5d330d;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 158px;
+}
+
+#jeux-equipe .jeu a {
+  background-color: #ddd2bb;
+  margin-top: 12px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #b76e5d;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+#jeux-equipe .jeu a:hover {
+  opacity: 0.8;
+}
+
+#equipe h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  color: #b76e5d;
+  font-family: "ukiranregular";
+  letter-spacing: 2px;
+  padding-top: 42px;
+  margin-bottom: 42px;
+}
