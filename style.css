@@ -31,16 +31,19 @@ font-family: "Red Hat Display", sans-serif;
   font-family: "Red Hat Display", sans-serif;
 }
 
-html {
-  min-width: 1920px;
-  width: 100%;
-}
-
 body {
   background: url(assets/background-right.jpg);
   background-repeat: repeat-y;
   background-position: center right;
   background-attachment: fixed;
+  min-width: 1920px;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 440px;
+  margin-top: 24px;
 }
 
 /* ----------------------------------------------------------- */
@@ -80,7 +83,7 @@ header nav ul#nav-main li a {
 }
 
 header nav ul#nav-main li a:hover {
-  color: #b76e5d;
+  color: #8b3f2d;
 }
 
 header nav ul#nav-main li a {
@@ -96,7 +99,7 @@ header nav ul#nav-main li a:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #b76e5d;
+  background: #8b3f2d;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -130,7 +133,7 @@ header #nav-user #nav-icons figure {
 }
 
 header #nav-user #nav-icons figcaption {
-  color: #b76e5d;
+  color: #8b3f2d;
   font-family: "ukiranregular";
   font-size: 20px;
   letter-spacing: 2px;
@@ -187,11 +190,11 @@ header #nav-user #search input::placeholder {
 }
 
 header #nav-user #search input {
-  color: #b76e5d;
+  color: #8b3f2d;
 }
 
 header #nav-user #search {
-  border-bottom: 1px solid #b76e5d;
+  border-bottom: 1px solid #8b3f2d;
   padding-bottom: 2px;
   width: 400px;
   display: flex;
@@ -206,7 +209,7 @@ header #header-infos {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #b76e5d;
+  background-color: #8b3f2d;
   padding-top: 12px;
   padding-bottom: 12px;
   position: fixed;
@@ -264,7 +267,7 @@ header #header-infos .inner #livraisons i {
   justify-content: center;
   text-align: center;
   font-size: 40px;
-  color: #b76e5d;
+  color: #8b3f2d;
   font-family: "ukiranregular";
   letter-spacing: 2px;
 }
@@ -303,7 +306,7 @@ header #header-infos .inner #livraisons i {
 #jeux-societe .tag {
   position: absolute;
   z-index: 2;
-  background-color: #b76e5d;
+  background-color: #8b3f2d;
   color: #ddd2bb;
   top: 0px;
   left: 0px;
@@ -333,7 +336,7 @@ header #header-infos .inner #livraisons i {
   text-overflow: ellipsis;
   overflow: hidden;
   font-family: "ukiranregular";
-  color: #b76e5d;
+  color: #8b3f2d;
   letter-spacing: 1px;
 }
 
@@ -342,7 +345,7 @@ header #header-infos .inner #livraisons i {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #b76e5d;
+  color: #8b3f2d;
   letter-spacing: 1px;
   background-color: #ddd2bb;
   margin-left: 24px;
@@ -382,12 +385,12 @@ header #header-infos .inner #livraisons i {
 }
 
 #jeux-societe a .prix span {
-  color: #b76e5d;
+  color: #8b3f2d;
   font-weight: 500;
 }
 
 #jeux-societe a .prix i {
-  background-color: #b76e5d;
+  background-color: #8b3f2d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -401,7 +404,7 @@ header #header-infos .inner #livraisons i {
 }
 
 #jeux-societe a .like i {
-  color: #b76e5d;
+  color: #8b3f2d;
   font-size: 22px;
 }
 
@@ -413,7 +416,7 @@ header #header-infos .inner #livraisons i {
 }
 
 #nouveautes .link a {
-  background-color: #b76e5d;
+  background-color: #8b3f2d;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 32px;
@@ -510,7 +513,7 @@ header #header-infos .inner #livraisons i {
   justify-content: center;
   text-align: center;
   font-size: 40px;
-  color: #b76e5d;
+  color: #8b3f2d;
   font-family: "ukiranregular";
   letter-spacing: 2px;
   margin-top: 42px;
@@ -550,7 +553,7 @@ header #header-infos .inner #livraisons i {
 #jeux-enfants .tag {
   position: absolute;
   z-index: 2;
-  background-color: #b76e5d;
+  background-color: #8b3f2d;
   color: #ddd2bb;
   top: 0px;
   left: 0px;
@@ -580,7 +583,7 @@ header #header-infos .inner #livraisons i {
   text-overflow: ellipsis;
   overflow: hidden;
   font-family: "ukiranregular";
-  color: #b76e5d;
+  color: #8b3f2d;
   letter-spacing: 1px;
 }
 
@@ -589,7 +592,7 @@ header #header-infos .inner #livraisons i {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #b76e5d;
+  color: #8b3f2d;
   letter-spacing: 1px;
   background-color: #ddd2bb;
   margin-left: 24px;
@@ -629,12 +632,12 @@ header #header-infos .inner #livraisons i {
 }
 
 #jeux-enfants a .prix span {
-  color: #b76e5d;
+  color: #8b3f2d;
   font-weight: 500;
 }
 
 #jeux-enfants a .prix i {
-  background-color: #b76e5d;
+  background-color: #8b3f2d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -648,7 +651,7 @@ header #header-infos .inner #livraisons i {
 }
 
 #jeux-enfants a .like i {
-  color: #b76e5d;
+  color: #8b3f2d;
   font-size: 22px;
 }
 
@@ -660,7 +663,7 @@ header #header-infos .inner #livraisons i {
 }
 
 #nouveautes-enfants .link a {
-  background-color: #b76e5d;
+  background-color: #8b3f2d;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 32px;
@@ -741,7 +744,7 @@ header #header-infos .inner #livraisons i {
 #precommandes {
   background: url(assets/center-right.png) no-repeat center left,
     url(assets/center-left.png) no-repeat center right;
-  background-color: #b76e5d;
+  background-color: #8b3f2d;
   margin-top: 42px;
   padding-top: 42px;
   padding-bottom: 42px;
@@ -793,7 +796,7 @@ header #header-infos .inner #livraisons i {
   position: absolute;
   z-index: 2;
   background-color: #ddd2bb;
-  color: #b76e5d;
+  color: #8b3f2d;
   top: 0px;
   left: 0px;
   padding-right: 24px;
@@ -822,7 +825,7 @@ header #header-infos .inner #livraisons i {
   text-overflow: ellipsis;
   overflow: hidden;
   font-family: "ukiranregular";
-  color: #b76e5d;
+  color: #8b3f2d;
   letter-spacing: 1px;
 }
 
@@ -831,7 +834,7 @@ header #header-infos .inner #livraisons i {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #b76e5d;
+  color: #8b3f2d;
   letter-spacing: 1px;
   background-color: #ddd2bb;
   margin-left: 24px;
@@ -871,12 +874,12 @@ header #header-infos .inner #livraisons i {
 }
 
 #jeux-precommandes a .prix span {
-  color: #b76e5d;
+  color: #8b3f2d;
   font-weight: 500;
 }
 
 #jeux-precommandes a .prix i {
-  background-color: #b76e5d;
+  background-color: #8b3f2d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -890,7 +893,7 @@ header #header-infos .inner #livraisons i {
 }
 
 #jeux-precommandes a .like i {
-  color: #b76e5d;
+  color: #8b3f2d;
   font-size: 22px;
 }
 
@@ -903,7 +906,7 @@ header #header-infos .inner #livraisons i {
 
 #precommandes .link a {
   background-color: #ffffff;
-  color: #b76e5d;
+  color: #8b3f2d;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 32px;
@@ -934,7 +937,7 @@ header #header-infos .inner #livraisons i {
   left: -20px;
   font-size: 28px;
   background-color: #ddd2bb;
-  color: #b76e5d;
+  color: #8b3f2d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -951,7 +954,7 @@ header #header-infos .inner #livraisons i {
   right: -20px;
   font-size: 28px;
   background-color: #ddd2bb;
-  color: #b76e5d;
+  color: #8b3f2d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -965,12 +968,12 @@ header #header-infos .inner #livraisons i {
 
 .jeux-precommandes-container .arrow-right i {
   font-size: 26px;
-  color: #b76e5d;
+  color: #8b3f2d;
   margin-right: -3px;
 }
 .jeux-precommandes-container .arrow-left i {
   font-size: 26px;
-  color: #b76e5d;
+  color: #8b3f2d;
   margin-left: -3px;
 }
 
@@ -982,7 +985,15 @@ header #header-infos .inner #livraisons i {
 /* ----------------------------------------------------------- */
 /* Equipe */
 
+.equipe-container {
+  padding-bottom: 24px;
+}
+
 #equipe {
+  background: url(assets/heart.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-attachment: fixed;
   background-color: #ffffff;
 }
 
@@ -1032,7 +1043,7 @@ header #header-infos .inner #livraisons i {
 #jeux-equipe .avatar h4 {
   font-family: "ukiranregular";
   text-align: center;
-  color: #b76e5d;
+  color: #8b3f2d;
   letter-spacing: 2px;
   font-size: 30px;
 }
@@ -1041,7 +1052,7 @@ header #header-infos .inner #livraisons i {
   margin-top: 8px;
   font-family: "ukiranregular";
   text-align: center;
-  color: #b76e5d;
+  color: #8b3f2d;
   letter-spacing: 2px;
 }
 
@@ -1049,7 +1060,7 @@ header #header-infos .inner #livraisons i {
   margin-top: 12px;
   font-weight: 500;
   text-transform: uppercase;
-  color: #b76e5d;
+  color: #8b3f2d;
 }
 
 #jeux-equipe h3 {
@@ -1088,7 +1099,7 @@ header #header-infos .inner #livraisons i {
   text-align: center;
   padding-top: 12px;
   padding-bottom: 12px;
-  color: #b76e5d;
+  color: #8b3f2d;
   font-weight: 500;
   border-radius: 8px;
 }
@@ -1103,9 +1114,511 @@ header #header-infos .inner #livraisons i {
   justify-content: center;
   text-align: center;
   font-size: 40px;
-  color: #b76e5d;
+  color: #8b3f2d;
   font-family: "ukiranregular";
   letter-spacing: 2px;
   padding-top: 42px;
   margin-bottom: 42px;
+}
+
+/* ----------------------------------------------------------- */
+/* Filtres */
+
+.reco {
+  background-color: #ddd2bb;
+  padding-top: 42px;
+  padding-bottom: 84px;
+  margin-top: 0px;
+}
+
+.filtres {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 293px;
+  color: #5d330d;
+}
+
+.filter h4 .icon-filter i {
+  margin-right: 12px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #b59247;
+}
+
+.filter h4 {
+  font-family: "ukiranregular";
+  color: #8b3f2d;
+  font-size: 26px;
+  margin-top: 8px;
+  letter-spacing: 1px;
+  display: flex;
+}
+
+.filter span.info-jeu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 293px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.filter span i {
+  margin-left: 8px;
+  color: #8b3f2d;
+}
+
+/* ----------------------------------------------------------- */
+/* Reco jeux */
+
+#jeux-reco {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#jeux-reco li {
+  width: 293px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 42px;
+  border-radius: 8px;
+  position: relative;
+}
+
+#jeux-reco img {
+  margin-bottom: 24px;
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+#jeux-reco .tag {
+  position: absolute;
+  z-index: 2;
+  background-color: #8b3f2d;
+  color: #ddd2bb;
+  top: 0px;
+  left: 0px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px 0px 80px 0px;
+}
+
+#jeux-reco .like {
+  position: absolute;
+  z-index: 2;
+}
+
+#jeux-reco a h3 {
+  font-size: 26px;
+  height: 26px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: "ukiranregular";
+  color: #8b3f2d;
+  letter-spacing: 1px;
+}
+
+#jeux-reco a h4 {
+  color: #5d330d;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #8b3f2d;
+  letter-spacing: 1px;
+  background-color: #ddd2bb;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  height: 20px;
+  overflow: hidden;
+}
+
+#jeux-reco li:hover {
+  opacity: 0.8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#jeux-reco a h5 {
+  display: none;
+}
+
+#jeux-reco a .stock {
+  color: #839b80;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#jeux-reco a .prix {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  align-items: center;
+  position: relative;
+}
+
+#jeux-reco a .prix span {
+  color: #8b3f2d;
+  font-weight: 500;
+}
+
+#jeux-reco a .prix i {
+  background-color: #8b3f2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  color: #ddd2bb;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+}
+
+#jeux-reco a .like i {
+  color: #8b3f2d;
+  font-size: 22px;
+}
+
+.jeux-reco-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+
+#reco h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  color: #5d330d;
+  font-family: "ukiranregular";
+  letter-spacing: 2px;
+  padding-top: 42px;
+  margin-bottom: 42px;
+}
+
+#reco h2.selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  color: #8b3f2d;
+  font-family: "ukiranregular";
+  letter-spacing: 2px;
+  padding-top: 42px;
+  margin-bottom: 32px;
+}
+
+/* ----------------------------------------------------------- */
+/* Divers */
+
+.divers {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  align-items: end;
+}
+
+.divers .event img {
+  border-radius: 8px;
+}
+
+.newsletter {
+  background: url(assets/newsletter.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 620px;
+  height: 480px;
+}
+
+.newsletter h1 {
+}
+
+.newsletter h2 {
+}
+
+.event h1 {
+  font-size: 42px;
+  color: #8b3f2d;
+  font-family: "ukiranregular";
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.event h2 {
+  font-size: 32px;
+  color: #b59247;
+  font-family: "ukiranregular";
+  letter-spacing: 2px;
+  margin-top: 6px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.image-event {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.image-event .arrow-left {
+  position: absolute;
+  left: -20px;
+  font-size: 28px;
+  background-color: #ddd2bb;
+  color: #8b3f2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.image-event .arrow-right {
+  position: absolute;
+  right: -20px;
+  font-size: 28px;
+  background-color: #ddd2bb;
+  color: #8b3f2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.image-event .arrow-right:hover,
+.image-event .arrow-left:hover {
+  opacity: 0.8;
+}
+
+.newsletter img {
+  height: 120px;
+}
+
+.newsletter h3 {
+  margin-top: 24px;
+  font-weight: 500;
+}
+
+.newsletter input {
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+  background-color: #ddd2bb;
+  width: 100%;
+  max-width: 320px;
+  color: #8b3f2d;
+  text-align: center;
+  font-weight: 500;
+  border: 2px dashed #ddd2bb;
+  margin-top: 24px;
+}
+
+/* ----------------------------------------------------------- */
+/* Footer */
+
+footer {
+  background-color: #8b3f2d;
+  padding-bottom: 82px;
+  padding-top: 42px;
+}
+
+footer .inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .inner .menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding-top: 24px;
+}
+
+footer .inner .menu div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .inner .menu h4 {
+  color: #ddd2bb;
+  font-size: 24px;
+  font-family: "ukiranregular";
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+footer .inner .menu a {
+  color: #ffffff;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.icons-footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
+}
+
+.icons-footer img {
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icons-footer h4 {
+  color: #8b3f2d;
+  font-size: 24px;
+  font-family: "ukiranregular";
+  letter-spacing: 2px;
+}
+
+.icons-footer h5 {
+  font-weight: 500;
+  color: #b59247;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.icons-footer div {
+  width: 293px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  padding: 42px;
+  border-radius: 8px;
+  position: relative;
+  border-radius: 8px;
+}
+
+/* ----------------------------------------------------------- */
+/* Banner */
+
+.banner {
+  width: 1280px;
+  height: 280px;
+  background: url(assets/banniere.png);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 42px;
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+html body div.banner div.nextprev {
+  position: absolute;
+  bottom: 18px;
+}
+
+html body div.banner div.nextprev span.other {
+  opacity: 0.4;
+  color: #ffffff;
+}
+
+html body div.banner div.nextprev span.other:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.banner .nextprev i {
+  font-size: 16px;
+  margin-left: 6px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+html body div.banner div.nextprev span.white {
+  opacity: 1;
+  color: #ffffff;
 }

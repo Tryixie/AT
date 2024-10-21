@@ -89,6 +89,16 @@
       </nav>
     </header>
 
+    <div class="banner">
+      <div class="nextprev">
+        <span class="white"><i class="fas fa-circle"></i></span>
+        <span class="other"><i class="fas fa-circle"></i></span>
+        <span class="other"><i class="fas fa-circle"></i></span>
+        <span class="other"><i class="fas fa-circle"></i></span>
+        <span class="other"><i class="fas fa-circle"></i></span>
+      </div>
+    </div>
+
     <main>
       <section id="nouveautes">
         <div class="top">
@@ -580,40 +590,52 @@
           </div>
           <div class="filtres">
             <div class="filter">
-              <i class="fas fa-users" aria-hidden="true"></i>
               <div>
-                <h4>Nombre de joueurs</h4>
-                <span
+                <h4>
+                  <span class="icon-filter">
+                    <i class="fas fa-users" aria-hidden="true"></i></span
+                  >Nombre de joueurs
+                </h4>
+                <span class="info-jeu"
                   >2 joueurs à 4 joueurs
                   <i class="fas fa-caret-down" aria-hidden="true"></i
                 ></span>
               </div>
             </div>
             <div class="filter">
-              <i class="fas fa-dice" aria-hidden="true"></i>
               <div>
-                <h4>Type de jeu</h4>
-                <span
+                <h4>
+                  <span class="icon-filter">
+                    <i class="fas fa-dice" aria-hidden="true"></i></span
+                  >Type de jeu
+                </h4>
+                <span class="info-jeu"
                   >Jeu d'ambiance
                   <i class="fas fa-caret-down" aria-hidden="true"></i
                 ></span>
               </div>
             </div>
             <div class="filter">
-              <i class="fas fa-clock" aria-hidden="true"></i>
               <div>
-                <h4>Durée de la partie</h4>
-                <span
+                <h4>
+                  <span class="icon-filter">
+                    <i class="fas fa-clock" aria-hidden="true"></i></span
+                  >Duree de la partie
+                </h4>
+                <span class="info-jeu"
                   >10 à 30 minutes
                   <i class="fas fa-caret-down" aria-hidden="true"></i
                 ></span>
               </div>
             </div>
             <div class="filter">
-              <i class="fas fa-baby" aria-hidden="true"></i>
               <div>
-                <h4>Age recommandé</h4>
-                <span
+                <h4>
+                  <span class="icon-filter">
+                    <i class="fas fa-baby" aria-hidden="true"></i></span
+                  >Age recommande
+                </h4>
+                <span class="info-jeu"
                   >8 ans et plus
                   <i class="fas fa-caret-down" aria-hidden="true"></i
                 ></span>
@@ -621,13 +643,190 @@
             </div>
           </div>
 
+          <h2 class="selection">Votre selection personnalisee</h2>
+
           <div class="jeux-reco-container">
-            <ul id="jeux-reco"></ul>
+            <ul id="jeux-reco">
+              <li>
+                <a href="#">
+                  <div class="game-image">
+                    <span class="tag">Nouveau</span>
+                    <img
+                      src="https://www.antretemps.com/upload/image/symphonimo---robert-brouwer---stratospheres-p-image-66979-grande.jpg"
+                      alt="Symphonimo"
+                    />
+                    <span class="like"
+                      ><i class="far fa-heart" aria-hidden="true"></i
+                    ></span>
+                  </div>
+
+                  <h3>Symphonimo</h3>
+                  <h4>Stratospheres</h4>
+                  <h5></h5>
+
+                  <span class="stock">En stock</span>
+                  <div class="prix">
+                    <span>13,90 €</span>
+                    <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="game-image">
+                    <span class="tag">Nouveau</span>
+                    <img
+                      src="https://www.antretemps.com/upload/image/lama-cadabra---reiner-knizia---gigamic-p-image-66600-grande.jpg"
+                      alt="Lama Cadabra"
+                    />
+                    <span class="like"
+                      ><i class="far fa-heart" aria-hidden="true"></i
+                    ></span>
+                  </div>
+
+                  <h3>Lama Cadabra</h3>
+                  <h4>Gigamic</h4>
+                  <h5></h5>
+
+                  <span class="stock">En stock</span>
+                  <div class="prix">
+                    <span>14.90 €</span>
+                    <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="game-image">
+                    <span class="tag">Nouveau</span>
+                    <img
+                      src="https://www.antretemps.com/upload/image/chapardeurs---yoshiteru-shinohara---matagot-p-image-66527-grande.jpg?_gl=1*2kkxsg*_up*MQ..&gclid=CjwKCAjw1NK4BhAwEiwAVUHPUEch7Z1wutS2aLT1rGHkjzmeM__o1lRH7vfb5jm_ydE8uKdQUe9ynhoCDZoQAvD_BwE"
+                      alt="Chapardeurs"
+                    />
+                    <span class="like"
+                      ><i class="far fa-heart" aria-hidden="true"></i
+                    ></span>
+                  </div>
+
+                  <h3>Chapardeurs</h3>
+                  <h4>Matagot</h4>
+                  <h5></h5>
+
+                  <span class="stock">En stock</span>
+                  <div class="prix">
+                    <span>17.90 €</span>
+                    <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="game-image">
+                    <span class="tag">Nouveau</span>
+                    <img
+                      src="https://www.antretemps.com/upload/image/raising-robots---l-atelier-des-prodiges----brett-sobol-et-seth-van-orden---lucky-duck-games-p-image-66433-grande.jpg"
+                      alt="Raising Robots : L'Atelier des Prodiges"
+                    />
+                    <span class="like"
+                      ><i class="far fa-heart" aria-hidden="true"></i
+                    ></span>
+                  </div>
+
+                  <h3>Raising Robots : L'Atelier des Prodiges</h3>
+                  <h4>Lucky Duck Games</h4>
+                  <h5></h5>
+
+                  <span class="stock">nov. 2024</span>
+                  <div class="prix">
+                    <span>46.90 €</span>
+                    <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
+
+      <section class="divers">
+        <article class="event">
+          <h1>Les prochains evenements</h1>
+          <h2>Ca se passe en boutique</h2>
+          <div class="image-event">
+            <div class="arrow-left">
+              <i class="fas fa-caret-left" aria-hidden="true"></i>
+            </div>
+            <img src="assets/tournoi.jpg" alt="Tournoi" />
+            <div class="arrow-right">
+              <i class="fas fa-caret-right" aria-hidden="true"></i>
+            </div>
+          </div>
+        </article>
+        <article class="newsletter"></article>
+      </section>
     </main>
 
-    <script type="module" src="index.js"></script>
+    <section class="atouts">
+      <div class="icons-footer">
+        <div>
+          <img src="assets/ixon-card.png" alt="x" />
+          <h4>Paiement securise</h4>
+          <h5>par carte bancaire</h5>
+        </div>
+        <div>
+          <img src="assets/icon-ship.png" alt="x" />
+          <h4>Livraison rapide</h4>
+          <h5>à domicile ou en Point Relais</h5>
+        </div>
+        <div>
+          <img src="assets/icon-balloon.png" alt="x" />
+          <h4>Envoi gratuit</h4>
+          <h5>Dès 60 € d'achat</h5>
+        </div>
+        <div>
+          <img src="assets/icon-colis.png" alt="x" />
+          <h4>Envoi soigne</h4>
+          <h5>et personnalisé</h5>
+        </div>
+      </div>
+    </section>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2598.8092042249627!2d6.159395577426647!3d49.35575967140398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47952503d3cfaff5%3A0xec3ba6d64a2c475e!2sL&#39;Antre%20Temps!5e0!3m2!1sfr!2sfr!4v1729481018515!5m2!1sfr!2sfr"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <footer>
+      <div class="inner">
+        <div class="menu">
+          <div>
+            <h4>A propos</h4>
+            <a href="">Qui sommes-nous ?</a>
+            <a href="">Le blog de l'Antre Temps</a>
+            <a href="">Mentions légales</a>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <a href="">Livraison</a>
+            <a href="">Paiement</a>
+            <a href="">CGV</a>
+          </div>
+          <div>
+            <h4>Besoin d'aide</h4>
+            <a href="">Retours et SAV</a>
+            <a href="">Contact</a>
+            <a href="">Confidentialité</a>
+          </div>
+          <div>
+            <h4>Offres</h4>
+            <a href="">Fidélité et parrainage</a>
+            <a href="">Nos marques</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
