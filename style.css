@@ -1622,3 +1622,104 @@ html body div.banner div.nextprev span.white {
   opacity: 1;
   color: #ffffff;
 }
+
+/* ----------------------------------------------------------- */
+/* Hidden */
+
+#hidden-nav {
+  width: 100%;
+  min-width: 320px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  background-color: rgb(255, 255, 255, 0.6);
+  display: none;
+}
+
+#hidden-nav .inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  align-items: end;
+}
+
+.hidden-listing {
+  display: flex;
+}
+
+.link-hidden {
+  display: flex;
+}
+
+.hidden-menu {
+  display: flex;
+  margin-right: 32px;
+  flex-direction: column;
+  width: 420px;
+}
+
+.hidden-menu a {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  font-weight: 500;
+  color: #8b3f2d;
+  border-radius: 4px;
+  padding: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.hidden-menu a:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  background-color: #ddd2bb;
+  opacity: 0.5;
+  font-weight: 500;
+  color: #8b3f2d;
+  border-radius: 4px;
+  padding: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.hidden-image {
+  display: flex;
+  flex-direction: column;
+  width: 376px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.hidden-image a:hover {
+  opacity: 0.7;
+}
+
+.image-a {
+  height: 156px;
+  width: 100%;
+  background-color: #8b3f2d;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.image-b {
+  height: 156px;
+  width: 100%;
+  background-color: #8b3f2d;
+  margin-top: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden-image img {
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.link-1 {
+  display: none;
+}

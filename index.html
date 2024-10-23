@@ -25,6 +25,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <header>
@@ -79,15 +80,49 @@
       </div>
       <nav>
         <ul id="nav-main">
-          <li><a href="#">Jeux de société</a></li>
-          <li><a href="#">Jeux enfants</a></li>
-          <li><a href="#">Puzzles</a></li>
-          <li><a href="#">Jeux de cartes</a></li>
-          <li><a href="#">Jeux de rôle</a></li>
-          <li><a href="#">Accessoires</a></li>
+          <li id="link-1"><a href="#">Jeux de société</a></li>
+          <li id="link-2"><a href="#">Jeux enfants</a></li>
+          <li id="link-3"><a href="#">Puzzles</a></li>
+          <li id="link-4"><a href="#">Jeux de cartes</a></li>
+          <li id="link-5"><a href="#">Jeux de rôle</a></li>
+          <li id="link-6"><a href="#">Accessoires</a></li>
         </ul>
       </nav>
     </header>
+
+    <div id="hidden-nav">
+      <div class="inner">
+        <div class="link-1 link-hidden">
+          <div class="hidden-listing">
+            <div class="hidden-menu">
+              <a href="#">Jeux solo </a>
+              <a href="#">Jeux à deux </a>
+              <a href="#">Jeux d'ambiance </a>
+              <a href="#">Jeux en famille </a>
+            </div>
+            <div class="hidden-menu">
+              <a href="#">Jeux experts </a>
+              <a href="#">Accessoires de jeux de société </a>
+              <a href="#">Jeux classiques </a>
+              <a href="#">Jeux d'enquêtes et Casse-Têtes </a>
+            </div>
+          </div>
+          <div class="hidden-image">
+            <a class="image-a">
+              <img src="assets/categorie-menu.png" alt="x" />
+            </a>
+            <a class="image-b">
+              <img src="assets/categorie-menu.png" alt="x" />
+            </a>
+          </div>
+        </div>
+        <!-- <div class="link-2 link-hidden"></div>
+        <div class="link-3 link-hidden"></div>
+        <div class="link-4 link-hidden"></div>
+        <div class="link-5 link-hidden"></div>
+        <div class="link-6 link-hidden"></div>-->
+      </div>
+    </div>
 
     <div class="banner">
       <div class="nextprev">
@@ -826,7 +861,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="index.js"></script>
   </body>
 </html>
